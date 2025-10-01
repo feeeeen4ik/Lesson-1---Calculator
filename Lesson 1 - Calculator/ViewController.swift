@@ -49,8 +49,8 @@ class ViewController: UIViewController {
             result.text = "На ноль делить нельзя!"
             return
         }
-        
-        result.text = "\(firstNumber + secondNumber)"
+            // исправление ошибки, происходил сложение, а не деление 
+        result.text = "\(firstNumber / secondNumber)"
     }
     
     @IBAction func multiply(_ sender: Any) {
